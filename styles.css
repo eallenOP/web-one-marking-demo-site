@@ -1,0 +1,86 @@
+/* CSS is organised according to the system https://css-tricks.com/methods-organize-css/
+1. Base rules
+2. Layout rules
+...
+
+
+*/
+
+/***************************************************
+*  1. Base rules                                   *
+****************************************************/
+
+/* Header section */
+
+.announcement {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+}
+
+.announcement a {
+    padding: 0.8rem;
+    color: white;
+    text-decoration: none;
+    font-size: clamp(1em,2vw,1.25em);
+}
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    background-color: #333;
+    color: white;
+}
+/***************************************************
+*  2. Layout rules                                   *
+****************************************************/
+.hero h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20rem;
+}
+
+/* Content section */
+
+main {
+    margin: 0 auto;
+    max-width: 42rem; /* Content no wider than readable line length */
+}
+
+.section-header {
+    font-size: 2.222222222222em;
+    font-family: BenchNine,system-ui,-apple-system,sans-serif;
+    border-bottom: 1px solid #ddd;
+    margin: 1em 0 .25em;
+    line-height: 1.1;
+}
+
+footer h2, footer h3, main h1, main h2, main h3 {
+    text-transform: uppercase;
+}
+
+blockquote {
+    font-family: Georgia,serif;
+    font-size: 1.1875em;
+    color: #666;
+    margin: 1.5em 0;
+    padding: 0 1em;
+    max-width: 31.57894736842em;
+    border-left: 6px solid #ddd;
+}
+
+/* Footer section */
+
+footer {
+    max-width: 42rem;
+    margin: 0 auto;
+    margin-bottom: 5em;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+}
